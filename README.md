@@ -107,7 +107,7 @@ We use [SMPL-X](https://smpl-x.is.tue.mpg.de/) to represent human bodies in our 
 
 
 ### Our Trained Checkpoints
-One can download our trained checkpoints [here](https://drive.google.com/file/d/12wOaOg3WwWoj0i_cuEvC3GvPqiGQ56mV/view?usp=sharing). The used hyper-parameters are included in the filename. For example,
+One can download our trained checkpoints [here](https://drive.google.com/file/d/1w9Sl94ku6L7nwBzdXsApSQO1lOf-yFCB/view?usp=sharing). The used hyper-parameters are included in the filename. For example,
 ```
 checkpoints_proxtrain_modelS1_batch32_epoch30_LR0.0003_LossVposer0.001_LossKL0.1_LossContact0.001_LossCollision0.01
 ```
