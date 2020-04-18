@@ -1,0 +1,33 @@
+model_type = s2
+prox_data = all
+use_scene_loss = 0
+
+executable = /is/ps2/yzhang/workspaces/PSI-internal/frontend_sh_scripts/train_js.sh
+
+arguments = "$(model_type) $(prox_data) $(use_scene_loss)"
+
+error = /is/ps2/yzhang/workspaces/PSI-internal/cluster_mpi/tmplogs/$(model_type)_$(prox_data)_sceneloss_$(use_scene_loss).err
+output = /is/ps2/yzhang/workspaces/PSI-internal/cluster_mpi/tmplogs/$(model_type)_$(prox_data)_sceneloss_$(use_scene_loss).out
+log = /is/ps2/yzhang/workspaces/PSI-internal/cluster_mpi/tmplogs/$(model_type)_$(prox_data)_sceneloss_$(use_scene_loss).log
+
+
+request_memory = 32000
+request_gpus = 1
+request_cpus=1
+requirements = CUDACapability>=7.0
+requirements = TARGET.CUDAGlobalMemoryMb > 15000
+getenv = True
+
+# Maximum expected execution time for the job, in seconds
+MaxTime = 43200
+# Number of retries before giving up
+NumRetries = 500
+
+periodic_hold = (JobStatus =?= 2) && ((CurrentTime - JobCurrentStartDate) >= $(MaxTime))
+periodic_hold_reason = ifThenElse(JobRunCount <= $(NumRetries), "Job runtime exceeded", "Job runtime exceeded, no more retries left")
+periodic_hold_subcode = ifThenElse(JobRunCount <= $(NumRetries), 1, 2)
+
+periodic_release = ( (JobStatus =?= 5) && (HoldReasonCode =?= 3) && (HoldReasonSubCode =?= 1) )
+
+
+queue
