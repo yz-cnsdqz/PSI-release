@@ -37,7 +37,7 @@ It is noted to check the *paths* in scripts before running the code; otherwise e
   * `frontend_sh_scripts` The bash scripts using the python scripts.
   * `source` The python code of model, data loading, training, testing and fitting.
   * `utils` The python code of evaluation, visualization and others.
-  * `demo.ipynb` The script for an interactive demo.
+  * `demo.ipynb` The script for an interactive demo. See `images/PSI_demo_use.mp4` for how to use it.
   * `checkpoints` Trained models are put here.
   * `body_models` SMPL-X body mesh model, and VPoser. See below.
 
