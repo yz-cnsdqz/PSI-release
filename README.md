@@ -2,6 +2,7 @@
 This is the code page for people-scene interaction modeling, and generating 3D people in scenes without people. 
 
 ![](images/PSI.png)
+
 ![](images/teaser.png)
 
 
