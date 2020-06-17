@@ -78,7 +78,7 @@ __PROX-E__ can be downloaded [here](https://drive.google.com/file/d/1KB1Ic6HSD1a
   2. `PROXE_box_verts.json` The vertices of virtual walls, fitted ceiling and floors.
   3. `scenes` The scene mesh from __PROX__.
   4. `scenes_downsampled` The downsampled scene mesh.
-  5. `scenes_sdf` The signed distance function of scenes.
+  5. `scenes_sdf` The signed distance function of scenes. SDF can be dowloaded [here](https://drive.google.com/file/d/1O00Qixblnq03KDcP6RuDvHkgZQ_vK_pA/view?usp=sharing)
   6. `scenes_semantics` The scene mesh with vertex color as object ID. Note: `verts_id=np.asarray(mesh.vertex_colors)*255/5.0`.
   7. `snapshot_for_testing` The snapshot from the real camera of __PROX__ test scenes. Each mat file has the body configurations, scene depth/semantics, and camera pose of each frame. These files ease to load data during testing phase.
   8. `realcams.hdf5` The compact file of real camera snapshots, for which the frame rate is downsampled.
