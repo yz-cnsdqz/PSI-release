@@ -73,7 +73,7 @@ ___
 
 The __PROX-E__ dataset is developed on top of [PROX](https://prox.is.tue.mpg.de/), and one can see the comparison between __PROX__ and __PROX-E__ in our manuscript. When using __PROX-E__, please first download the __PROX__ dataset, and also cite [PROX](https://prox.is.tue.mpg.de/). As an expansion pack of __PROX__, we additionally provide scene meshes with semantic annotation, scene/human body data captured from virutal and real cameras, and other auxilariy files.
 
-__PROX-E__ can be downloaded [here](https://drive.google.com/file/d/1KB1Ic6HSD1a68ioLllxitL0lpVk56FxG/view?usp=sharing). After downloading __PROX__ and the __PROXE__ expansion pack, there will be:
+__PROX-E__ can be downloaded [here](https://drive.google.com/file/d/1WfhoRv45ch5xb_UFbCAwkavPyHszhCyY/view). After downloading __PROX__ and the __PROXE__ expansion pack, there will be:
   1. `body_segments` The body segments from __PROX__.
   2. `PROXE_box_verts.json` The vertices of virtual walls, fitted ceiling and floors.
   3. `scenes` The scene mesh from __PROX__.
